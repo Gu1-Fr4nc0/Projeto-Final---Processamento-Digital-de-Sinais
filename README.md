@@ -33,4 +33,4 @@ O código foi desenvolvido para rodar nativamente, **sem necessidade de toolboxe
 4.  Exibirá no **Command Window** as métricas quantitativas (RMSE e Aumento de Energia).
 
 ## 📊 Resultados Esperados
-Ao executar o script, você observará que o sinal com falha (Vermelho) apresenta um aumento significativo de energia nas baixas frequências do envelope em comparação ao sinal saudável (Azul), confirmando o diagnóstico da falha no rolamento.# Projeto-Final---Processamento-Digital-de-Sinais
+Ao executar o script, você observará que o sinal com falha (Vermelho) apresenta um aumento significativo de energia nas baixas frequências do envelope em comparação ao sinal saudável (Azul), confirmando o diagnóstico da falha no rolamento.
