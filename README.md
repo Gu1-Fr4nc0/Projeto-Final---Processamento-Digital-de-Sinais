@@ -9,7 +9,7 @@ Este repositório contém o projeto final da disciplina de Processamento Digital
 ## 📂 Conteúdo do Repositório
 Todos os arquivos necessários para a execução estão incluídos neste repositório:
 
-* `main_analise.m`: Script principal em MATLAB (contém todo o processamento, filtros e geração de gráficos).
+* `final.mlx`: Script principal em MATLAB (contém todo o processamento, filtros e geração de gráficos).
 * `N09_M07_F10_K001_1.mat`: Dados do motor em condição **Saudável** (Baseline).
 * `N09_M07_F10_KA04_1.mat`: Dados do motor com **Falha no Anel Externo**.
 * `Artigo_Final.pdf`: Relatório técnico completo com a fundamentação teórica e discussão dos resultados.
