@@ -21,7 +21,7 @@ O código foi desenvolvido para rodar nativamente, **sem necessidade de toolboxe
 
 1.  **Clone ou Baixe** este repositório completo.
 2.  Abra o MATLAB e navegue até a pasta do projeto.
-3.  Abra o arquivo `main_analise.m`.
+3.  Abra o arquivo `final.mlx`.
 4.  Clique em **Run**.
 
 ### O que o código fará:
