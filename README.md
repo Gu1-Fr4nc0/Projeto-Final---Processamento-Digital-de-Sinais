@@ -1,36 +1,43 @@
-# Projeto Final PDS - Tema 6: Corrente de Motores sob Falha (MCSA)
+# Análise de Corrente de Motor para Diagnóstico de Falhas (MCSA)
 
-Este repositório contém o projeto final da disciplina de Processamento Digital de Sinais (2025/2). O trabalho implementa a técnica **MCSA (Motor Current Signature Analysis)** para diagnosticar falhas em rolamentos de motores elétricos, utilizando análise espectral e demodulação por envelope.
+Este projeto implementa a técnica **Motor Current Signature Analysis (MCSA)** para detecção de falhas em rolamentos de motores elétricos através do processamento de sinais de corrente.
 
-## 👥 Autores
+## 📋 Autores
 * **Felipe Ferrer Sorrilha**
 * **Guilherme Pança Franco**
 
-## 📂 Conteúdo do Repositório
-Todos os arquivos necessários para a execução estão incluídos neste repositório:
+## 📁 Estrutura do Projeto
+- `final.mlx`: Script principal em MATLAB Live Script
+- `N09_M07_F10_K001_1.mat`: Dados do motor em condição normal
+- `N09_M07_F10_KA04_1.mat`: Dados do motor com falha no anel externo
+- `Artigo.pdf`: Artigo técnico completo com metodologia e resultados
 
-* `final.mlx`: Script principal em MATLAB (contém todo o processamento, filtros e geração de gráficos).
-* `N09_M07_F10_K001_1.mat`: Dados do motor em condição **Saudável** (Baseline).
-* `N09_M07_F10_KA04_1.mat`: Dados do motor com **Falha no Anel Externo**.
-* `Artigo_Final.pdf`: Relatório técnico completo com a fundamentação teórica e discussão dos resultados.
+**Fonte dos dados:** Paderborn University Bearing Dataset
 
-> **Fonte dos Dados:** Os sinais de corrente foram obtidos do *Paderborn University Bearing Dataset*.
+## ⚙️ Execução
+1. Clone ou baixe o repositório
+2. Abra o MATLAB na pasta do projeto
+3. Execute `final.mlx`
+4. Os resultados serão exibidos automaticamente
 
-## 🚀 Como Executar (Reprodução)
-O código foi desenvolvido para rodar nativamente, **sem necessidade de toolboxes adicionais** (como Signal Processing Toolbox).
+### Pré-requisitos
+- MATLAB (sem toolboxes adicionais necessárias)
+- Os arquivos `.mat` devem estar na mesma pasta do script
 
-1.  **Clone ou Baixe** este repositório completo.
-2.  Abra o MATLAB e navegue até a pasta do projeto.
-3.  Abra o arquivo `final.mlx`.
-4.  Clique em **Run**.
+## 📈 Resultados
+O script gera:
+1. Gráfico comparativo dos espectros PSD das condições normal e com falha
+2. Gráfico de energia por faixa espectral
+3. Métricas quantitativas no console:
+   - RMSE entre espectros
+   - Aumento de energia na banda 0-100Hz
+   - Índice de modulação
 
-### O que o código fará:
-1.  Carregará automaticamente os arquivos `.mat` inclusos na pasta.
-2.  Realizará o pré-processamento e filtragem dos sinais.
-3.  Gerará uma figura com dois gráficos:
-    * **Espectro MCSA (Superior):** Comparação das correntes na frequência fundamental.
-    * **Espectro de Envelope (Inferior):** Evidência da falha mecânica.
-4.  Exibirá no **Command Window** as métricas quantitativas (RMSE e Aumento de Energia).
+## 🔍 Metodologia
+- Pré-processamento e filtragem dos sinais de corrente
+- Análise espectral (PSD)
+- Demodulação por envelope
+- Cálculo de métricas de diagnóstico
 
-## 📊 Resultados Esperados
-Ao executar o script, você observará que o sinal com falha (Vermelho) apresenta um aumento significativo de energia nas baixas frequências do envelope em comparação ao sinal saudável (Azul), confirmando o diagnóstico da falha no rolamento.
+## 📄 Referência
+Para detalhes completos da metodologia, análise e discussão dos resultados, consulte o arquivo `Artigo_Final.pdf`.
